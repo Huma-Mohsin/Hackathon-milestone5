@@ -1,0 +1,287 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f3f6;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px; /* Narrower width for a sleeker design */
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px; /* Reduced padding for a sleeker look */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Lighter shadow for a cleaner look */
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #2a3e4c;
+    margin-bottom: 30px; /* Reduced margin */
+    font-size: 2em; /* Slightly smaller */
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+    margin-bottom: 25px; /* Reduced margin */
+    padding: 20px; /* Reduced padding */
+    background-color: #f9fbfc;
+}
+
+legend {
+    font-weight: 700;
+    color: #2a3e4c;
+    padding: 0 10px;
+    font-size: 1.2em; /* Slightly smaller font */
+    letter-spacing: 0.5px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 6px; /* Slightly reduced margin */
+    font-weight: 600;
+    font-size: 0.95em; /* Slightly smaller font */
+    color: #333;
+}
+
+/* File input styling */
+input[type="file"]#picture {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 12px; /* Reduced margin */
+}
+
+/* Custom file input button styling */
+input[type="file"]#picture::file-selector-button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px; /* Slightly smaller padding */
+    font-size: 0.95em; /* Slightly smaller font */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]#picture::file-selector-button:hover {
+    background-color: #357ABD;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px; /* Reduced margin */
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+    font-size: 0.95em; /* Slightly smaller font */
+    background-color: #f9fbfc;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px; /* Reduced minimum height */
+}
+
+/* Button styling */
+button {
+    width: auto; /* Ensures buttons don't stretch */
+    padding: 10px 20px; /* Slightly smaller padding */
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em; /* Slightly smaller font */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0; /* Ensures no external margin */
+    text-align: center;
+}
+
+button:hover {
+    background-color: #357ABD;
+    transform: scale(1.03); /* Slightly stronger hover effect */
+}
+
+button:focus {
+    outline: 2px solid #357ABD;
+    outline-offset: 2px;
+}
+
+/* Action Buttons Container */
+.actions {
+    margin-top: 25px; /* Reduced margin */
+    display: flex; /* Added flexbox to center buttons */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Optional: Adds space between buttons */
+    width: 100%;
+}
+
+/* Unique URL input styling */
+input#uniqueUrl {
+    padding: 10px;
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+    font-size: 0.95em; /* Slightly smaller font */
+    background-color: #fff;
+    width: 100%;
+}
+
+/* Resume output styling */
+#resume-output {
+    margin-top: 25px;
+    border: 1px solid #dfe4ea;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Reduced gap */
+}
+
+/* Resume Wrapper */
+.resume-wrapper {
+    display: flex;
+    gap: 20px; /* Reduced gap */
+}
+
+/* Sidebar styling */
+.sidebar {
+    flex: 1;
+    padding: 20px; /* Reduced padding */
+    border-right: 1px solid #dfe4ea;
+    background-color: #f9fbfc;
+}
+
+.profile-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #4a90e2;
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.name {
+    font-size: 1.6em; /* Reduced font size */
+    color: #2a3e4c;
+    font-weight: bold;
+    margin-bottom: 12px; /* Reduced margin */
+}
+
+.contact {
+    font-size: 1.05em; /* Slightly smaller font */
+    color: #555;
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+/* Main Content */
+.content {
+    flex: 2;
+    padding: 20px; /* Reduced padding */
+}
+
+section {
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+h2 {
+    font-size: 1.5em; /* Slightly smaller font */
+    color: #2a3e4c;
+    margin-bottom: 12px; /* Reduced margin */
+    font-weight: 700;
+}
+
+.section-content {
+    margin-top: 12px; /* Reduced margin */
+    font-size: 1.05em; /* Slightly smaller font */
+}
+
+/* Education, Skills, Work Experience */
+.education-item,
+.work-item {
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.education-item h3,
+.work-item h3 {
+    font-size: 1.2em; /* Slightly smaller font */
+    color: #4a90e2;
+    margin-bottom: 6px; /* Reduced margin */
+}
+
+.education-item p,
+.work-item p {
+    font-size: 0.95em; /* Slightly smaller font */
+    color: #555;
+}
+
+/* Skills */
+.skill-badge {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 6px 12px; /* Reduced padding */
+    border-radius: 15px;
+    font-size: 0.9em; /* Slightly smaller font */
+    margin: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .resume-wrapper {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    input[type="file"]#picture::file-selector-button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
